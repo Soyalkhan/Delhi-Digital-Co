@@ -5,7 +5,7 @@ const Services = () => {
         <section className="py-12 bg-white sm:py-16 lg:py-20">
     <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="text-center">
-            <h2 className="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl xl:text-5xl font-pj">Why brands choose us?</h2>
+            <h2 className="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl xl:text-5xl font-pj">How we can help you?</h2>
         </div>
 
         <div className="grid grid-cols-1 mt-10 text-center sm:mt-16 sm:grid-cols-2 sm:gap-x-12 gap-y-12 md:grid-cols-3 md:gap-0 xl:mt-24">
@@ -15,7 +15,7 @@ const Services = () => {
                     <path d="M13 29H1V41C1 43.209 2.791 45 5 45H13V29Z" fill="#D4D4D8" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                     <path d="M45 29H33V45H41C43.209 45 45 43.209 45 41V29Z" fill="#D4D4D8" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-                <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj">Support</h3>
+                <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj">One click support</h3>
                 <p className="mt-5 text-base text-gray-600 font-pj">Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.</p>
             </div>
 
@@ -27,7 +27,7 @@ const Services = () => {
                     <path d="M5 17L15 7L23 15L37 1" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                     <path d="M28 1H37V10" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-                <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj">Sales</h3>
+                <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj">Sky rocket sales</h3>
                 <p className="mt-5 text-base text-gray-600 font-pj">Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.</p>
             </div>
 
@@ -38,7 +38,7 @@ const Services = () => {
                     <path d="M18 26H7V35H18V26Z" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                     <path d="M35 7H24V35H35V7Z" fill="#D4D4D8" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-                <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj">Onboarding</h3>
+                <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj">Quick Onboarding</h3>
                 <p className="mt-5 text-base text-gray-600 font-pj">Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.</p>
             </div>
 
@@ -53,7 +53,7 @@ const Services = () => {
                     <path d="M1 25H13V31H29V25H41" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                     <path d="M37 1H5C2.79086 1 1 2.79086 1 5V37C1 39.2091 2.79086 41 5 41H37C39.2091 41 41 39.2091 41 37V5C41 2.79086 39.2091 1 37 1Z" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-                <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj">Product</h3>
+                <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj">Product development</h3>
                 <p className="mt-5 text-base text-gray-600 font-pj">Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.</p>
             </div>
 
@@ -77,7 +77,7 @@ const Services = () => {
                         stroke-linejoin="round"
                     />
                 </svg>
-                <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj">Quality</h3>
+                <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj">Quality content</h3>
                 <p className="mt-5 text-base text-gray-600 font-pj">Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.</p>
             </div>
 
@@ -86,7 +86,7 @@ const Services = () => {
                     <path d="M25 7C34.941 7 43 15.059 43 25C43 34.941 34.941 43 25 43C15.059 43 7 34.941 7 25" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                     <path d="M19 1C9.059 1 1 9.059 1 19H19V1Z" fill="#D4D4D8" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-                <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj">Result</h3>
+                <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj">Result with impact</h3>
                 <p className="mt-5 text-base text-gray-600 font-pj">Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.</p>
             </div>
         </div>

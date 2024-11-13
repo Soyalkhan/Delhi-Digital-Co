@@ -4,6 +4,7 @@ import Hero from './Components/Hero'
 import HowItWorks from './Components/Howitworks'
 import Services from './Components/services'
 import Footer from './Components/Footer'
+import PortfolioSections from './Components/PortfolioSections'
 function App() {
 
 
@@ -13,7 +14,8 @@ function App() {
         <Hero/>
         <Services/>
         <HowItWorks/>
-<Footer/>
+        <PortfolioSections/>
+        <Footer/>
 
     </>
   )
