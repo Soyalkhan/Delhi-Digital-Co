@@ -12,6 +12,17 @@ import p2 from '../assets/p2.png'
 import p3 from '../assets/p3.jpg'
 
 
+import pp1 from '../assets/pp1.webp'
+import pp2 from '../assets/pp2.webp'
+import pp3 from '../assets/pp3.webp'
+import pp4 from '../assets/pp4.webp'
+import pp5 from '../assets/pp5.webp'
+import pp6 from '../assets/pp6.webp'
+
+
+
+
+
 export default function PortfolioSections() {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [currentWorkSlide, setCurrentWorkSlide] = useState(0)
@@ -28,12 +39,12 @@ export default function PortfolioSections() {
   ]
 
   const featuredWork = [
-    { id: 1, title: "Salaryplan Campaign", image: "/placeholder.jpg", category: "Advertising" },
-    { id: 2, title: "Mi Circus", image: "/placeholder.jpg", category: "E-commerce" },
-    { id: 3, title: "Coca-Cola Wall Art", image: "/placeholder.jpg", category: "Brand Design" },
-    { id: 4, title: "KLM Airlines", image: "/placeholder.jpg", category: "Digital Marketing" },
-    { id: 5, title: "Skinora Beauty", image: "/placeholder.jpg", category: "Social Media" },
-    { id: 6, title: "Odd Coffee", image: "/placeholder.jpg", category: "Packaging" }
+    { id: 1, title: "Salaryplan Campaign", image: pp1, category: "Advertising" },
+    { id: 2, title: "Mi Circus", image: pp2, category: "E-commerce" },
+    { id: 3, title: "Coca-Cola Wall Art", image: pp3, category: "Brand Design" },
+    { id: 4, title: "KLM Airlines", image: pp4, category: "Digital Marketing" },
+    { id: 5, title: "Skinora Beauty", image: pp5, category: "Social Media" },
+    { id: 6, title: "Odd Coffee", image: pp6, category: "Packaging" }
   ]
 
   const sampleWork = [
