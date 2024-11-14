@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ddcLogo from '../assets/ddc logo 2.png';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,13 +15,13 @@ const Header = () => {
     {/* lg+ */}
     <nav className="flex items-center justify-between h-16 lg:h-20">
       <div className="flex-shrink-0">
-        <a href="#" title="Logo" className="flex">
+       
+          <Link to="/">
           <img
             className="w-40 sm:w-48 lg:w-72" // Adjusted sizes for different screen sizes
             src={ddcLogo}
-            alt="Logo"
-          />
-        </a>
+            alt="Logo"/>
+      </Link>
       </div>
 
       <button

@@ -6,6 +6,12 @@ import s2 from '../assets/s2.png';
 import s3 from '../assets/s3.png';
 import s4 from '../assets/s4.png';
 import s5 from '../assets/s5.png';
+
+import p1 from '../assets/p1.png'
+import p2 from '../assets/p2.png'
+import p3 from '../assets/p3.jpg'
+
+
 export default function PortfolioSections() {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [currentWorkSlide, setCurrentWorkSlide] = useState(0)
@@ -31,35 +37,35 @@ export default function PortfolioSections() {
   ]
 
   const sampleWork = [
-    { id: 1, image:  s1 , description: "Innovative branding for tech startup" },
-    { id: 2, image:  s2, description: "E-commerce redesign for fashion brand" },
-    { id: 3, image:  s3, description: "Social media campaign for food delivery app" },
-    { id: 4, image:  s4 , description: "Product packaging for eco-friendly cosmetics" },
-    { id: 5, image: s5 , description: "Website overhaul for financial services firm" }
+    { id: 1, image:  s1 , description: "Client review : ★★★★" },
+    { id: 2, image:  s2, description: "Client review : ★★★★★" },
+    { id: 3, image:  s3, description: "Client review : ★★★★" },
+    { id: 4, image:  s4 , description: "Client review : ★★★★★" },
+    { id: 5, image: s5 , description: "Client review : ★★★★" }
   ]
 
   const adSlides = [
     {
-      title: "December Campaign",
-      image: "/placeholder.jpg",
-      description: "Giving you more reasons to be on the road"
+      title: "SOB**",
+      image: p1,
+      description: "Skyrocket sales as expected"
     },
     {
-      title: "Christmas Special",
-      image: "/placeholder.jpg",
-      description: "Cherish the magic of Christmas season"
+      title: "Cec**",
+      image: p2,
+      description: "Growth with us is 100%"
     },
     {
-      title: "Zero Down Payment",
-      image: "/placeholder.jpg",
-      description: "Save more and worry less"
+      title: "Aste**",
+      image: p3,
+      description: "Start today get sales"
     }
   ]
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentWorkSlide((prevSlide) => (prevSlide + 1) % sampleWork.length)
-    }, 5000) // Change slide every 5 seconds
+    }, 3000) // Change slide every 5 seconds
 
     return () => clearInterval(interval)
   }, [])
@@ -74,10 +80,10 @@ export default function PortfolioSections() {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="group bg-[#FFE135] text-black p-12 transition-transform duration-300 hover:-translate-y-2"
+                className="group bg-[#5fcfff] text-white p-12 transition-transform duration-300 hover:-translate-y-2"
               >
                 <h3 className="text-4xl font-bold mb-6 whitespace-pre-line" style={{ WebkitTextStroke: '1px black', WebkitTextFillColor: 'transparent' }}>
-                  {service.title}
+                {service.title}
                 </h3>
                 <p className="text-lg">{service.description}</p>
               </div>
@@ -90,7 +96,7 @@ export default function PortfolioSections() {
       <section className="py-20 bg-black">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center mb-12">
-            <h2 className="text-8xl font-bold tracking-tighter">FEATURED</h2>
+            <h2 className="text-6xl font-bold tracking-tighter">FEATURED BRANDS</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuredWork.map((work) => (
@@ -106,7 +112,7 @@ export default function PortfolioSections() {
                   className="w-full h-full object-cover aspect-square"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 flex flex-col justify-end">
-                  <p className="text-[#FFE135] text-sm mb-2">{work.category}</p>
+                  <p className="text-[#5fcfff] text-sm mb-2">{work.category}</p>
                   <h3 className="text-2xl font-bold mb-4">{work.title}</h3>
                   <button className="bg-transparent border border-white text-white px-4 py-2 rounded hover:bg-white hover:text-black transition-colors">View Project</button>
                 </div>
@@ -122,7 +128,7 @@ export default function PortfolioSections() {
           <div className="flex items-end justify-between mb-12">
             <div>
               <span className="text-sm text-gray-400 block mb-2">SAMPLE</span>
-              <h2 className="text-6xl font-bold">Work</h2>
+              <h2 className="text-6xl font-bold">Our Work</h2>
             </div>
             <div className="text-right">
               <span className="text-4xl font-bold">{String(currentWorkSlide + 1).padStart(2, '0')}</span>
@@ -153,50 +159,55 @@ export default function PortfolioSections() {
       </section>
 
       {/* Ads Showcase Section */}
-      <section className="py-20 bg-black">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">ADS THAT PERFORM</h2>
-          <div className="relative">
-            <div className="flex overflow-hidden">
-              <motion.div
-                className="flex"
-                animate={{ x: `-${currentSlide * 100}%` }}
-                transition={{ duration: 0.5 }}
-              >
-                {adSlides.map((slide, index) => (
-                  <div key={index} className="w-full flex-shrink-0 px-4">
-                    <div className="bg-white p-8 rounded-lg text-black">
-                      <h3 className="text-2xl font-bold mb-4">{slide.title}</h3>
-                      <p className="mb-6">{slide.description}</p>
-                      <div className="aspect-video relative">
-                        <img
-                          src={slide.image}
-                          alt={slide.title}
-                          className="w-full h-full object-cover rounded"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </motion.div>
+<section className="py-20 bg-black">
+  <div className="container mx-auto px-4">
+    <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">ADS THAT PERFORM</h2>
+    <div className="relative">
+      <div className="flex overflow-hidden">
+        <motion.div
+          className="flex"
+          animate={{ x: `-${currentSlide * 100}%` }}
+          transition={{ duration: 0.5 }}
+        >
+          {adSlides.map((slide, index) => (
+            <div key={index} className="w-full flex-shrink-0 px-4">
+              <div className="bg-white p-8 rounded-lg text-black">
+                <h3 className="text-2xl font-bold mb-4">{slide.title}</h3>
+                <p className="mb-6">{slide.description}</p>
+                <div className="aspect-video relative">
+                  <img
+                    src={slide.image}
+                    alt={slide.title}
+                    className="w-full h-full object-cover rounded"
+                  />
+                </div>
+              </div>
             </div>
-            <button
-              onClick={() => setCurrentSlide(Math.max(0, currentSlide - 1))}
-              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 bg-white text-black p-2 rounded-full"
-              disabled={currentSlide === 0}
-            >
-              <ChevronLeft className="w-6 h-6" />
-            </button>
-            <button
-              onClick={() => setCurrentSlide(Math.min(adSlides.length - 1, currentSlide + 1))}
-              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 bg-white text-black p-2 rounded-full"
-              disabled={currentSlide === adSlides.length - 1}
-            >
-              <ChevronRight className="w-6 h-6" />
-            </button>
-          </div>
-        </div>
-      </section>
+          ))}
+        </motion.div>
+      </div>
+
+      {/* Left Button */}
+      <button
+        onClick={() => setCurrentSlide(Math.max(0, currentSlide - 1))}
+        className="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 bg-slate-300 text-black p-3 rounded-full z-10"
+        disabled={currentSlide === 0}
+      >
+        <ChevronLeft className="w-6 h-6" />
+      </button>
+
+      {/* Right Button */}
+      <button
+        onClick={() => setCurrentSlide(Math.min(adSlides.length - 1, currentSlide + 1))}
+        className="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 bg-slate-300 text-black p-3 rounded-full z-10"
+        disabled={currentSlide === adSlides.length - 1}
+      >
+        <ChevronRight className="w-6 h-6" />
+      </button>
+    </div>
+  </div>
+</section>
+
     </div>
   )
 }
