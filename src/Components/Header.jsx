@@ -63,18 +63,19 @@ const Header = () => {
       </button>
 
       <div className="hidden lg:flex lg:items-center lg:ml-auto lg:space-x-10">
-        <a href="#" className="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">Features</a>
+        
         <a href="#" className="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">Services</a>
-        <a href="#" className="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">About</a>
+        <a href="https://in.linkedin.com/company/delhidigitalco" className="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">About</a>
         <a href="#" className="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">Brands</a>
       </div>
-
-      <a
+      <Link to="https://wa.me/919205110208">
+      <p
         href="#"
         className="items-center justify-center hidden px-4 py-3 ml-10 text-base font-semibold text-blue-600 transition-all duration-600 border border-blue-600 lg:inline-flex hover:bg-blue-700 hover:text-white hover:focus:text-white"
       >
         Let's Talk
-      </a>
+      </p>
+      </Link>
     </nav>
 
     {/* xs to lg */}

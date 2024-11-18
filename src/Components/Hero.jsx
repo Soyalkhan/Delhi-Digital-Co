@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import BannerIMG from '../assets/black gst banner.jpg';
+import { Link } from 'react-router-dom';
+Link
 
 const Hero = () => {
     const services = [
@@ -65,9 +67,9 @@ const Hero = () => {
             </h2>
 
             <div className="flex items-center justify-center mt-8 space-x-5 xl:mt-16 lg:justify-start">
-                <a
-                    href="#"
-                    title=""
+            <Link to="https://wa.me/919205110208">
+                <p
+                    
                     className="
                         inline-flex
                         items-center
@@ -90,7 +92,8 @@ const Hero = () => {
                     role="button"
                 >
                     Let's Discuss now
-                </a>
+                </p>
+                </Link>
             </div>
         </div>
     </div>

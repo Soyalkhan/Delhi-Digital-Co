@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { ChevronLeft,Megaphone,Globe,  ChevronRight, LineChart, Palette } from 'lucide-react'
 import s1 from '../assets/s1.png';
 import s2 from '../assets/s2.png';
 import s3 from '../assets/s3.png';
@@ -30,21 +30,29 @@ export default function PortfolioSections() {
   const services = [
     {
       title: "BRAND\nSOLUTIONS",
-      description: "We are your trusted PARTNER IN BRANDING, offering tailored solutions to build a STRONG BRAND IDENTITY that resonates with your audience."
+      icon:  <Megaphone className="w-24 h-24 text-gray-600" />
     },
     {
       title: "DIGITAL\nSOLUTIONS",
-      description: "We guide your online presence towards success, meticulously crafting and implementing our EXPERTLY TAILORED MARKETING STRATEGIES"
+      icon: <Globe className="w-24 h-24  text-gray-600" />
+    },
+    {
+      title: "MARKETING\nSOLUTIONS",
+      icon: <LineChart className="w-24 h-24  text-gray-600" />
+    },
+    {
+      title: "GRAPHICS\nSOLUTIONS",
+      icon: <Palette className="w-24 h-24  text-gray-600" />
     }
-  ]
+  ];
 
   const featuredWork = [
-    { id: 1, title: "Salaryplan Campaign", image: pp1, category: "Advertising" },
-    { id: 2, title: "Mi Circus", image: pp2, category: "E-commerce" },
-    { id: 3, title: "Coca-Cola Wall Art", image: pp3, category: "Brand Design" },
-    { id: 4, title: "KLM Airlines", image: pp4, category: "Digital Marketing" },
-    { id: 5, title: "Skinora Beauty", image: pp5, category: "Social Media" },
-    { id: 6, title: "Odd Coffee", image: pp6, category: "Packaging" }
+    { id: 1, title: "The wouff", image: pp1, category: "Advertising, Website, Product shoot, Social Media", link : "https://thewouff.com/" },
+    { id: 2, title: "SOBER", image: pp2, category: "Shipping, Packaging, Product shoot, Website, Social Media",link : "https://drinksober.co/" },
+    { id: 3, title: "STYLE ISLAND", image: pp3, category: "Website", link : "https://www.styleisland.com/" },
+    { id: 4, title: "VERA MOSS", image: pp4, category: "PHOTOSHOOT", link : "#" },
+    { id: 5, title: "suri", image: pp5, category: "Website, Social Media, Product shoot", link : "https://www.surifreshextract.com/" },
+    { id: 6, title: "SAMSARA", image: pp6, category: "Website, Product Shoot, Social Media", link : "https://www.samsaragin.com/" }
   ]
 
   const sampleWork = [
@@ -70,7 +78,7 @@ export default function PortfolioSections() {
       title: "Aste**",
       image: p3,
       description: "Start today get sales"
-    }
+    },
   ]
 
   useEffect(() => {
@@ -85,23 +93,31 @@ export default function PortfolioSections() {
     <div className="bg-black text-white">
       {/* Services Section */}
       <section className="py-20">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold mb-12">What Can We Do Together?</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className="group bg-[#5fcfff] text-white p-12 transition-transform duration-300 hover:-translate-y-2"
-              >
-                <h3 className="text-4xl font-bold mb-6 whitespace-pre-line" style={{ WebkitTextStroke: '1px black', WebkitTextFillColor: 'transparent' }}>
-                {service.title}
-                </h3>
-                <p className="text-lg">{service.description}</p>
-              </div>
-            ))}
-          </div>
+  <div className="container mx-auto px-4">
+    <h2 className="text-4xl md:text-5xl font-bold mb-12">What Can We Do Together?</h2>
+    <div className="grid md:grid-cols-2 gap-8">
+      {services.map((service, index) => (
+        <div
+          key={index}
+          className="group bg-white text-red p-12 transition-transform duration-300 hover:-translate-y-4 flex flex-col items-center"
+        >
+          <div className="mb-6">{service.icon}</div>
+          <h3
+            className="text-4xl font-bold mb-6 text-center whitespace-pre-line"
+            style={{
+              WebkitTextStroke: "1px black",
+              WebkitTextFillColor: "transparent"
+            }}
+          >
+            {service.title}
+          </h3>
+          <p className="text-lg text-center">{service.description}</p>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Featured Work Section */}
       <section className="py-20 bg-black">
@@ -123,9 +139,9 @@ export default function PortfolioSections() {
                   className="w-full h-full object-cover aspect-square"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 flex flex-col justify-end">
-                  <p className="text-[#5fcfff] text-sm mb-2">{work.category}</p>
-                  <h3 className="text-2xl font-bold mb-4">{work.title}</h3>
-                  <button className="bg-transparent border border-white text-white px-4 py-2 rounded hover:bg-white hover:text-black transition-colors">View Project</button>
+                  <p className="text-[#5fcfff] text-sm mb-2 uppercase">{work.category}</p>
+                  <h3 className="text-2xl font-bold mb-4 uppercase">{work.title}</h3>
+                  <a href={work.link}><button className="bg-transparent border border-white text-white px-4 py-2 rounded hover:bg-white hover:text-black transition-colors">View Project</button></a>
                 </div>
               </motion.div>
             ))}
@@ -138,7 +154,7 @@ export default function PortfolioSections() {
         <div className="container mx-auto px-4">
           <div className="flex items-end justify-between mb-12">
             <div>
-              <span className="text-sm text-gray-400 block mb-2">SAMPLE</span>
+             
               <h2 className="text-6xl font-bold">Our Work</h2>
             </div>
             <div className="text-right">

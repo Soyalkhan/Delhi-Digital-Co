@@ -12,9 +12,11 @@ const Footer = () => {
             <Globe className="w-8 h-8 text-primary" />
             <h2 className="text-2xl font-bold">Transform your digital presence</h2>
           </div>
+          <Link to="https://wa.me/919205110208">
           <button className="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition-colors">
             Lets connect and discuss
-          </button>
+          </button></Link>
+          
         </div>
       </div>
 
@@ -23,21 +25,21 @@ const Footer = () => {
           {/* About Section */}
           <div className="space-y-4">
             
-            <h3 className="text-xl font-bold"> Digital Digital Company</h3>
+            <h3 className="text-xl font-bold"> Digital Digital Co. </h3>
             <p className="text-gray-600">
               Empowering businesses with cutting-edge digital solutions. From web development to brand building, we create experiences that drive growth.
             </p>
             <div className="flex gap-4">
-              <Link to="/" className="text-gray-600 hover:text-black transition-colors">
+              <Link to="https://www.instagram.com/delhidigitalco/" className="text-gray-600 hover:text-black transition-colors">
                 <Twitter className="w-5 h-5" />
               </Link>
-              <Link to="/" className="text-gray-600 hover:text-black transition-colors">
+              <Link to="https://www.facebook.com/delhidigitalco" className="text-gray-600 hover:text-black transition-colors">
                 <Facebook className="w-5 h-5" />
               </Link>
               <Link to="/" className="text-gray-600 hover:text-black transition-colors">
                 <Instagram className="w-5 h-5" />
               </Link>
-              <Link to="/" className="text-gray-600 hover:text-black transition-colors">
+              <Link to="https://in.linkedin.com/company/delhidigitalco" className="text-gray-600 hover:text-black transition-colors">
                 <Linkedin className="w-5 h-5" />
               </Link>
             </div>
@@ -90,15 +92,15 @@ const Footer = () => {
               <li><Link to="/" className="hover:text-black transition-colors">Case Studies</Link></li>
               <li><Link to="/" className="hover:text-black transition-colors">Resources</Link></li>
               <li><Link to="/" className="hover:text-black transition-colors">Blog</Link></li>
-              <li><Link to="/" className="hover:text-black transition-colors">Contact</Link></li>
+              <li><Link to="https://wa.me/919205110208" className="hover:text-black transition-colors">Contact</Link></li>
             </ul>
           </div>
-        </div>
+        </div> 
 
         {/* Bottom Section */}
         <div className="mt-16 pt-8 border-t border-gray-100">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-gray-600 text-sm">
-            <p>© 2024 Digital Agency. All rights reserved.</p>
+            <p>© 2024 Delhi Digital Co. All rights reserved.</p>
             <div className="flex gap-6">
               {/* Privacy Policy Link points to '/privacy-policy' */}
               <Link to="/privacy-policy">
