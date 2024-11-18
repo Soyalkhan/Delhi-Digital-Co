@@ -123,7 +123,7 @@ export default function PortfolioSections() {
       <section id="brands" className="py-20 bg-black">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center mb-12">
-            <h2 className="text-6xl font-bold tracking-tighter">FEATURED BRANDS</h2>
+            <h2 className="text-6xl font-bold tracking-tighter">Featured Brands</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuredWork.map((work) => (
@@ -188,7 +188,7 @@ export default function PortfolioSections() {
       {/* Ads Showcase Section */}
 <section className="py-20 bg-black">
   <div className="container mx-auto px-4">
-    <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">ADS THAT PERFORM</h2>
+    <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">Ads thet perform</h2>
     <div className="relative">
       <div className="flex overflow-hidden">
         <motion.div
