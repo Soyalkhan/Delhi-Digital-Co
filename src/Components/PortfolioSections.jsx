@@ -120,7 +120,7 @@ export default function PortfolioSections() {
 
 
       {/* Featured Work Section */}
-      <section className="py-20 bg-black">
+      <section id="brands" className="py-20 bg-black">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center mb-12">
             <h2 className="text-6xl font-bold tracking-tighter">FEATURED BRANDS</h2>

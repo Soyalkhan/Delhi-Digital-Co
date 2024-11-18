@@ -16,7 +16,7 @@ const Services = () => {
                     <path d="M45 29H33V45H41C43.209 45 45 43.209 45 41V29Z" fill="#D4D4D8" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj">One click support</h3>
-                <p className="mt-5 text-base text-gray-600 font-pj">Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.</p>
+                <p className="mt-5 text-base text-gray-600 font-pj">Effortlessly connect with our support team to resolve your concerns in no time. Our one-click solution ensures swift assistance to keep you moving forward without delays.</p>
             </div>
 
             <div className="md:p-8 lg:p-14 md:border-l md:border-gray-200">
@@ -28,7 +28,7 @@ const Services = () => {
                     <path d="M28 1H37V10" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj">Sky rocket sales</h3>
-                <p className="mt-5 text-base text-gray-600 font-pj">Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.</p>
+                <p className="mt-5 text-base text-gray-600 font-pj">Boost your business growth with tailored strategies designed to maximize revenue and drive customer engagement. Take your sales to the next level with impactful solutions.</p>
             </div>
 
             <div className="md:p-8 lg:p-14 md:border-l md:border-gray-200">
@@ -39,7 +39,7 @@ const Services = () => {
                     <path d="M35 7H24V35H35V7Z" fill="#D4D4D8" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj">Quick Onboarding</h3>
-                <p className="mt-5 text-base text-gray-600 font-pj">Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.</p>
+                <p className="mt-5 text-base text-gray-600 font-pj">Experience a seamless and efficient onboarding process. We simplify every step to get you up and running in no time, saving effort and maximizing productivity.</p>
             </div>
 
             <div className="md:p-8 lg:p-14 md:border-t md:border-gray-200">
@@ -54,7 +54,7 @@ const Services = () => {
                     <path d="M37 1H5C2.79086 1 1 2.79086 1 5V37C1 39.2091 2.79086 41 5 41H37C39.2091 41 41 39.2091 41 37V5C41 2.79086 39.2091 1 37 1Z" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj">Product development</h3>
-                <p className="mt-5 text-base text-gray-600 font-pj">Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.</p>
+                <p className="mt-5 text-base text-gray-600 font-pj">Transform your ideas into reality with our comprehensive product development solutions. From concept to execution, we deliver innovation that drives success.</p>
             </div>
 
             <div className="md:p-8 lg:p-14 md:border-l md:border-gray-200 md:border-t">
@@ -78,7 +78,7 @@ const Services = () => {
                     />
                 </svg>
                 <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj">Quality content</h3>
-                <p className="mt-5 text-base text-gray-600 font-pj">Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.</p>
+                <p className="mt-5 text-base text-gray-600 font-pj">Stand out with content that resonates. Our high-quality, tailored messaging ensures your brand captures attention and delivers value to your audience.</p>
             </div>
 
             <div className="md:p-8 lg:p-14 md:border-l md:border-gray-200 md:border-t">
@@ -87,7 +87,7 @@ const Services = () => {
                     <path d="M19 1C9.059 1 1 9.059 1 19H19V1Z" fill="#D4D4D8" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj">Result with impact</h3>
-                <p className="mt-5 text-base text-gray-600 font-pj">Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.</p>
+                <p className="mt-5 text-base text-gray-600 font-pj">Achieve measurable outcomes that matter. Our results-oriented approach delivers impactful solutions, ensuring your goals are not just met but exceeded.</p>
             </div>
         </div>
     </div>
