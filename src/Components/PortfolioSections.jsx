@@ -188,7 +188,7 @@ export default function PortfolioSections() {
       {/* Ads Showcase Section */}
 <section className="py-20 bg-black">
   <div className="container mx-auto px-4">
-    <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">Ads thet perform</h2>
+    <h2 className="text-4xl md:text-5xl font-bold mb-12">Ads thet perform</h2>
     <div className="relative">
       <div className="flex overflow-hidden">
         <motion.div

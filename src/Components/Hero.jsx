@@ -88,6 +88,7 @@ const Hero = () => {
                         focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 focus:ring-offset-gray-100
                         hover:bg-gray-200
                         border-black
+                        lg:ml-7
                     "
                     role="button"
                 >
